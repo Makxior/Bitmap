@@ -10,4 +10,3 @@ public:
 
 	static int getIterations(double x, double y);
 };
-

@@ -3,14 +3,10 @@
 
 using namespace std;
 
-
 Mandelbrot::Mandelbrot() {
-	// TODO Auto-generated constructor stub
-
 }
 
 Mandelbrot::~Mandelbrot() {
-	// TODO Auto-generated destructor stub
 }
 
 int Mandelbrot::getIterations(double x, double y) {
@@ -32,4 +28,3 @@ int Mandelbrot::getIterations(double x, double y) {
 
 	return iterations;
 }
-

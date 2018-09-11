@@ -21,4 +21,3 @@ public:
 	void add(const Zoom& zoom);
 	pair<double, double> doZoom(int x, int y);
 };
-

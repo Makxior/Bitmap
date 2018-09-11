@@ -8,7 +8,6 @@ using namespace std;
 
 int main()
 {
-
 	FractalCreator fractalCreator(800, 600);
 
 	fractalCreator.addRange(0.0, RGB(0, 0, 255));

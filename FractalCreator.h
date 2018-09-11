@@ -1,9 +1,9 @@
 #pragma once
+
 #include <string>
 #include <cstdint>
 #include <memory>
 #include <vector>
-#include <math.h>
 #include "Zoom.h"
 #include "Mandelbrot.h"
 #include "Bitmap.h"
@@ -32,6 +32,10 @@ using namespace std;
 	public:
 		FractalCreator(int width,int height);
 		~FractalCreator();
+		void run(string name);
+		void addZoom(const Zoom& zoom);
+		void addRange(double rangeEnd, const RGB& rgb);
+
 	private:
 		void calculateIteration();
 		void calculateTotalIterations();
@@ -39,11 +43,4 @@ using namespace std;
 		void drawFractal();
 		void writeBitmap(string name);
 		int getRange(int iterations) const;
-
-	public:
-		void run(string name);
-		void addZoom(const Zoom& zoom);
-		void addRange(double rangeEnd, const RGB& rgb);
 	};
-
-

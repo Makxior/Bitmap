@@ -1,6 +1,5 @@
 #pragma once
 
-
 struct Zoom {
 	int x{0};
 	int y{0};
@@ -8,4 +7,3 @@ struct Zoom {
 
 	Zoom(int x, int y, double scale) : x(x), y(y), scale(scale) {};
 };
-
